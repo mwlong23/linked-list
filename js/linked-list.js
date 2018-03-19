@@ -65,14 +65,19 @@ function reverseList(list) {
   list.root = reversedList.root;
 }
 
+
+// create short Linked List
 let ll = createNewLinkedList();
 addNodeToLinkedList(ll, "!");
 addNodeToLinkedList(ll, 'world');
 addNodeToLinkedList(ll, 'there');
 addNodeToLinkedList(ll, 'Hello,')
+// demonstrate Delete
 deleteAt(ll, 2);
+// demonstrate Insert List item At a specific position
 addListItemAt(ll, 2, "blue");
 printList(ll)
+//demonstrate reverse List
 reverseList(ll)
 printList(ll)
 
